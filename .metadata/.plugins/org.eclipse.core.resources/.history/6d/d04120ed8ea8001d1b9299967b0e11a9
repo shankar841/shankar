@@ -1,0 +1,27 @@
+package dto;
+
+public class Dtopatience
+{
+private  int pid;
+private String  pname;
+private String pblood;
+public int getPid() {
+	return pid;
+}
+public void setPid(int pid) {
+	this.pid = pid;
+}
+public String getPname() {
+	return pname;
+}
+public void setPname(String pname) {
+	this.pname = pname;
+}
+public String getPblood() {
+	return pblood;
+}
+public void setPblood(String pblood) {
+	this.pblood = pblood;
+}
+
+}

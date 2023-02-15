@@ -1,0 +1,23 @@
+class Single
+{
+ int a=40;
+ }
+ class Demo extends Single
+{
+  void test(){
+  System.out.println("heello");
+  }
+}
+ class Demo0 extends Single
+{
+  void disp(){
+  System.out.println("hiii");
+  }
+  public static void main(String [] args){
+  Demo0 d1=new Demo0();
+  d1.disp();
+  d1.test();
+  System.out.println(d1.a);
+  
+  }
+  }

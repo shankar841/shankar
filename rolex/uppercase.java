@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+public class uppercase {
+
+	public static void main(String[] args) 
+	{
+	Scanner sc =new Scanner(System.in);
+	System.out.println("enter the string");
+	String str=sc.nextLine();
+	String res="";
+	for (int i = 0; i < str.length(); i++) 
+	{
+		char ch=str.charAt(i);
+		if((ch>='a'&& ch<='z')&&(ch!=' '))
+	{
+		int x=(int)ch;
+		res=res+(char)(x-32);
+		}else
+		res=res+ch;
+		
+	}
+	System.out.println(res);
+
+	}
+
+}

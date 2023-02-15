@@ -1,0 +1,14 @@
+class demo7
+{
+void sector()
+{
+int r=13;
+double t=35.5;
+double result =r*r*t*0.5;
+System.out.println(result);
+}
+public static void main (String[]args)
+{
+new demo7().sector();
+}
+}

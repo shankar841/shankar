@@ -1,0 +1,37 @@
+package jecm4;
+
+import java.io.IOException;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+import dao.Daoemployee;
+import dto.Employee;
+ 
+
+
+public class Class extends GenericServlet
+{
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		String s1=req.getParameter("empid");
+	int empid=Integer.parseInt(s1);
+	String empname=req.getParameter("empname");
+	String dob=req.getParameter("dob");
+	String gender=req.getParameter("gender");
+	String country=req.getParameter("country");
+	
+		Employee employee=new Employee();
+		employee.setEmpid(empid);
+		employee.setEmpname(empname);
+		employee.setDob(dob);
+		employee.setGender(gender);
+		employee.setCountry(country);
+		Daoemployee daoemployee=new Daoemployee();
+		daoemployee.insert(employee);
+
+}
+} 

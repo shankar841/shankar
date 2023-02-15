@@ -1,0 +1,33 @@
+class Anunty
+{
+void jb()
+{
+System.out.println("stack developer");
+}
+}
+class Uncle
+{
+public static void main (String []args)
+{
+Anunty a1=new Anunty();
+Boy1 b1=new Boy1(a1);
+Boy2 b2=new Boy2(a1);
+
+}
+}
+class Boy1
+{
+ void needjob(Anunty a2)
+{
+System.out.println("stack developer");
+}
+}
+class Boy2
+	{
+ void needjob(Anunty a3)
+		{
+	System.out.println("stack developer");
+}
+}
+
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="abc" method="Post">
+pid<input type="text"name="pid"><br>
+pname<input type="text"name="pname"><br>
+pblood<input type="text" name="pblood"><br>
+<button>submit</button>
+</form>
+</body>
+</html>
